@@ -25,7 +25,7 @@ fn simple_transform_macro_props_plugin(
             .get_transform_plugin_config()
             .expect("failed to get plugin config"),
     )
-    .expect("invalid config for emotion");
+    .expect("invalid config");
 
     program.fold_with(&mut simple_transform_macro_props(config))
 }
